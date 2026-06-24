@@ -1,0 +1,19 @@
+{
+  "name": "balanz-login-autofill",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Enables standard password manager autofill on the Balanz login page.",
+  "type": "module",
+  "scripts": {
+    "build:chrome": "node scripts/build.mjs chrome",
+    "build:firefox": "node scripts/build.mjs firefox",
+    "check": "node --check src/content-script.js && node --check scripts/build.mjs",
+    "lint:firefox": "npm run build:firefox && web-ext lint --source-dir dist/firefox --self-hosted",
+    "package:chrome": "npm run build:chrome && web-ext build --source-dir dist/chrome --artifacts-dir artifacts --filename balanz-login-autofill-chrome.zip --overwrite-dest",
+    "package:firefox": "npm run build:firefox && web-ext build --source-dir dist/firefox --artifacts-dir artifacts --filename balanz-login-autofill-firefox.zip --overwrite-dest"
+  },
+  "devDependencies": {
+    "web-ext": "^9.0.0"
+  }
+}
