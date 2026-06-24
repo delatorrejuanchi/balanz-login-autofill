@@ -2,6 +2,11 @@
 
 Enables standard password manager autofill on the Balanz login page.
 
+## Install
+
+- Chrome Web Store: pending review
+- Firefox Add-ons: pending review
+
 ## Motivation
 
 Balanz's login markup gets in the way of standard password manager behavior in two places:
