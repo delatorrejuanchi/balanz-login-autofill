@@ -5,7 +5,7 @@ Enables standard password manager autofill on the Balanz login page.
 ## Install
 
 - Chrome Web Store: pending review
-- Firefox Add-ons: pending review
+- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/balanz-login-autofill/)
 
 ## Motivation
 
